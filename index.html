@@ -1,0 +1,35 @@
+<h2>Live Neural Network Trainer</h2>
+
+<div id="tabs">
+    <button class="tabBtn" data-tab="number">Number Mode</button>
+    <button class="tabBtn" data-tab="color">Color Mode</button>
+</div>
+
+<div class="tabContent" id="number">
+    <label>Input values (comma-separated):</label>
+    <input type="text" id="inputValuesNumber" value="2,-1,0.5">
+
+    <label>Number of layers:</label>
+    <input type="number" id="numLayers" value="2" min="1">
+
+    <label>Neurons per layer (comma-separated):</label>
+    <input type="text" id="neuronsPerLayer" value="3,1">
+
+    <label>Target output:</label>
+    <input type="number" id="targetValue" value="50">
+
+    <button id="runBtnNumber">Run & Train Live</button>
+</div>
+
+<div class="tabContent" id="color" style="display:none;">
+    <label>Input values (comma-separated):</label>
+    <input type="text" id="inputValuesColor" value="0.5,0.3,0.9">
+
+    <label>Target color (RGB, 0–255, comma-separated):</label>
+    <input type="text" id="targetColor" value="128,64,200">
+
+    <button id="runBtnColor">Run & Train Color</button>
+</div>
+
+<h3>Output:</h3>
+<div id="output"></div>
